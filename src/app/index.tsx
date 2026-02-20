@@ -15,7 +15,7 @@ export const App = () => {
         <ErrorBoundary>
             <AppQueryProvider>
                 <AppThemeProvider>
-                    <HashRouter>
+                    <HashRouter basename="/test-faraway/">
                         <Starfield />
                         <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: 1 }}>
                             <Header />

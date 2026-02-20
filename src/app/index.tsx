@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AppThemeProvider } from './providers/ThemeProvider';
 import { AppQueryProvider } from './providers/QueryProvider';
 import { ErrorBoundary } from './providers/ErrorBoundary';
@@ -15,7 +15,7 @@ export const App = () => {
         <ErrorBoundary>
             <AppQueryProvider>
                 <AppThemeProvider>
-                    <BrowserRouter>
+                    <HashRouter>
                         <Starfield />
                         <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: 1 }}>
                             <Header />
@@ -27,7 +27,7 @@ export const App = () => {
                                 </Routes>
                             </Box>
                         </Box>
-                    </BrowserRouter>
+                    </HashRouter>
                 </AppThemeProvider>
             </AppQueryProvider>
         </ErrorBoundary>

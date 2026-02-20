@@ -34,6 +34,7 @@ export const CharacterRelationsSkeleton: React.FC<CharacterRelationsSkeletonProp
         );
     };
 
+
     return (
         <Box sx={{ mt: 4 }}>
             {renderSkeletonList('Movies', filmsCount)}
